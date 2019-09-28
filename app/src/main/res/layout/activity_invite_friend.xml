@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RestActivity.MyHomeActivity"
+    android:orientation="vertical"
+    android:background="#E6E6FA">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#272b46"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:ignore="MissingConstraints"
+            app:title="Мой Дом"
+            app:titleTextColor="#fff"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/backActMyH"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@id/toolbar2"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ваш дом:"
+        android:textSize="14dp"
+        android:textColor="#000"
+        android:background="#fff"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="#fff">
+
+    </Spinner>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linSwitch"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/myHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:layout_alignLeft="@id/sticky_switch"
+            android:textColor="#000"
+            android:text="Мой дом"
+            android:layout_alignStart="@id/sticky_switch" />
+
+        <io.ghyeok.stickyswitch.widget.StickySwitch
+            android:id="@+id/sticky_switch"
+            android:layout_width="180dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="50dp"
+            app:ss_animationDuration="400"
+            android:layout_gravity="center_vertical"
+            app:ss_animationType="line"
+            app:ss_iconPadding="10dp"
+            app:ss_iconSize="18dp"
+            app:ss_leftIcon="@drawable/ic_my_home"
+            app:ss_rightIcon="@drawable/ic_tenants"
+            app:ss_sliderBackgroundColor="#b4d5f0"
+            app:ss_switchColor="#63afe1"/>
+
+        <TextView
+            android:id="@+id/tenants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Жильцы"
+            android:layout_alignRight="@id/sticky_switch"
+            android:textColor="#000"
+            android:layout_alignEnd="@id/sticky_switch" />
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/MyHomeFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="События дома"
+                    android:textSize="14dp"
+                    android:textColor="#000"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="Тема:"
+                    android:textSize="14dp"
+                    android:textColor="#63afe1"/>
+
+                <EditText
+                    android:id="@+id/TapeTile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Введите название темы"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="Текст:"
+                android:textSize="14dp"
+                android:textColor="#63afe1"/>
+
+            <EditText
+                android:id="@+id/TapeText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:hint="Введите основной текс"/>
+
+            <Button
+                android:id="@+id/addList"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/start_button1"
+                android:text="@string/addList"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+            <android.support.v7.widget.RecyclerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/TapeList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="-1dp"
+                android:padding="8dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

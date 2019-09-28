@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.RestFragment"
+    android:background="#E6E6FA">
+
+
+        <LinearLayout
+            android:id="@+id/profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:background="#fff">
+
+
+            <ImageView
+                android:id="@+id/panda"
+                android:layout_width="84dp"
+                android:layout_height="84dp"
+                android:src="@drawable/panda"
+                android:layout_gravity="left" />
+
+            <LinearLayout android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Евгений Телегин"
+            android:textColor="#272b46"
+            android:layout_gravity="left"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Открыть профиль"
+            android:textColor="#272b46"
+            android:layout_gravity="left"
+            android:textSize="12sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:divider="@null"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+    </ListView>
+
+
+
+
+</RelativeLayout>

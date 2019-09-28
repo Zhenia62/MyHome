@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Чтобы начать работу с приложением выполните "
+            android:gravity="center"
+            android:textColor="#272b46"
+            android:textSize="18sp"
+            android:layout_marginBottom="34dp"
+            />
+        <Button
+            android:id="@+id/account_a"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/start_button1"
+            android:text="@string/in"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="или"/>
+
+        <Button
+            android:id="@+id/account_b"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="200sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/start_button2"
+            android:text="@string/registration"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            android:layout_marginTop="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Вы можете пропустить авторизацию"
+            android:gravity="center"
+            android:textColor="#272b46"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/skip"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/start_button1"
+            android:text="@string/skip"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

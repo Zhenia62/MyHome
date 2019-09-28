@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistrationActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#272b46"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:ignore="MissingConstraints"
+        android:layout_above="@+id/fl_content"
+        app:titleTextColor="#fff"
+        app:title="@string/title_registration"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="#272b46"
+            android:text="Добро пожаловать!"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@id/toolbar2"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:textSize="14dp"
+            android:textColor="#272b46"
+            android:text="Наш Дом Рязань - это портал взаимодействия жителей региона между собой и с органами исполнительной власти."/>
+    </LinearLayout>
+
+
+        <FrameLayout
+        android:id="@+id/firstFrame"
+        android:layout_below="@id/mainText"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/secondLiner"
+        android:layout_marginTop="45dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal"
+        android:layout_below="@id/firstFrame">
+
+        <Button
+            android:id="@+id/back"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100sp"
+            android:layout_marginLeft="15dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/start_button2"
+            android:text="@string/back"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/next"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/start_button1"
+            android:text="@string/next"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#E6E6FA"
+    android:padding="10dp">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                    <Switch
+                        android:id="@+id/complainSwitch_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="В ожидании" />
+
+                    <Switch
+                        android:id="@+id/complainSwitch_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:text="В работе" />
+
+                    <Switch
+                        android:id="@+id/complainSwitch_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_below="@id/complainSwitch_3"
+                        android:layout_alignParentRight="true"
+                        android:text="Исполнено" />
+
+
+                <Spinner
+                    android:id="@+id/complainSpiner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/complainSwitch_2"
+                    android:layout_marginTop="1dp"
+                    android:entries="@array/dates" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerViewComplaint"
+                    android:layout_below="@id/complainSpiner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                app:backgroundTint="#272B46"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/ic_plus_button"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+</LinearLayout>

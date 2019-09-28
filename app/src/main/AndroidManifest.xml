@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.teleg.myhome">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_home" />
+        <activity android:name=".BootActivity"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".YouTube.VideoActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RegistrationActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.MainProfile"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.rulesOFmoderationActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainViewFragment.NewComplaintActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".mainPhotoProject.FullScreenPhotoActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainViewFragment.NewProposalActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainViewFragment.NewSurveyActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".EditProfileActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.MyMessageActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.SettingActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.PreferActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.MyHomeActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.AboutProjectActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.UserAgreementActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.RegulationActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainViewFragment.MoreComplainActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".RestActivity.MyDiscussionsActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".MainViewFragment.MoreSurveyActivity"
+            android:configChanges="orientation|screenSize"/>
+        <activity
+            android:name=".StartHelpActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_start_help"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

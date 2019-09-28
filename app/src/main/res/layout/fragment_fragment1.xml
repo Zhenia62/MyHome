@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.regFragments.fragment1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mainText"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:textColor="#63afe1"
+            android:text="Найдите на карте дом, где вы живете "/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <requestFocus/>
+        </EditText>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:textColor="#63afe1"
+            android:text="или выберите из списка новостроек"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:spinnerMode="dialog"
+            android:entries="@array/city">
+        </Spinner>
+
+        <CheckBox
+            android:layout_marginTop="10dp"
+            android:text="Регистрируясь, вы даете согласие на обработку персональных данных"
+            android:textSize="12dp"
+            android:textColor="#272b46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>
